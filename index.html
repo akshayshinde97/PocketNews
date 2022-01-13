@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="resources/style.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="navbar navbar-light">
+    <a class="navbar-brand" href="#">
+      <div id="rect"></div>
+      <h4 id=nav_text>Pocket News</h4>
+      <button  id="signOut">SignOut</button>
+    </a>
+  </nav>
+  <div id="line"></div>
+    <!-- <div class="loader9" id="loader"></div> -->
+  <div class="loading" id="loader"></div>
+
+<div class="card" id="Nouser" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Please Signin or SignUp to continue</h5>
+    <h6 class="card-subtitle mb-2 text-muted">PocketNews</h6>
+    <p class="card-text">You can take the tour of PocketNews with test login too.</p>
+    <a href="./login.html" class="card-link">Next</a>
+  </div>
+</div>
+  <div id="cusCon">
+    <div class="accordion" id="accordionExample">
+      <div  id="Sports-accordion" class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button   class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg></i> Sports
+            </button>
+          </h2>
+        </div>
+        <!-- image courosal -->
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div id="sports" class="carousel-inner">  
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a  id="carousel-next" class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div  id="Covid-accordion" class="card">
+        <div class="card-header" id="headingTwo">
+          
+          <h2 class="mb-0">
+            <button  id="Politics" class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg></i> Covid around World
+            </button>
+          </h2>
+        </div>
+        <!-- image courosal -->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+            <div id="covid" class="carousel-inner">
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a  id="carousel-next" class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="Tech-accordion" class="card">
+        <div class="card-header" id="headingThree">  
+          <h2 class="mb-0">
+            <button  id="Tech" class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg></i>Tech
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="carouselExampleControls3" class="carousel slide" data-ride="carousel">
+            <div id="tech" class="carousel-inner">
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a  id="carousel-next" class="carousel-control-next" href="#carouselExampleControls3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+      </div> 
+      <div id="Food-accordion" class="card">
+        <div class="card-header" id="headingfour">
+          <h2 class="mb-0">
+            <button  id="Food" class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg></i>Food
+            </button>
+          </h2>
+        </div>
+        <div id="collapsefour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="carouselExampleControls4" class="carousel slide" data-ride="carousel">
+            <div id="food" class="carousel-inner">     
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls4" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a  id="carousel-next" class="carousel-control-next" href="#carouselExampleControls4" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div> 
+      <div id="Business-accordion" class="card">
+        <div class="card-header" id="headingfive">
+          <h2 class="mb-0">
+            <button  id="Business" class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg></i>Business
+            </button>
+          </h2>
+        </div>
+        <div id="collapsefive" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="carouselExampleControls5" class="carousel slide" data-ride="carousel">
+            <div id="business" class="carousel-inner">
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a  id="carousel-next" class="carousel-control-next" href="#carouselExampleControls5" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+      </div> 
+      <div id="Entertainment-accordion" class="card">
+        <div class="card-header" id="headingsix">
+          <h2 class="mb-0">
+            <button  id="Business" class="btn btn-link btn-block text-left panel-title" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="true" aria-controls="collapsesix">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+              </svg></i>Entertainment
+            </button>
+          </h2>
+        </div>
+        <div id="collapsesix" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
+            <div id="entertainment" class="carousel-inner">
+              
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a  id="carousel-next" class="carousel-control-next" href="#carouselExampleControls6" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+  </div>
+  <!-- <script type="module" src="index.js"></script>
+  <script type="module" src="app.js"></script> -->
+  <script type="module" src="resources/userData.js"></script>
+  <script type="module">
+    import {logout} from "./resources/userData.js";
+    document.getElementById("signOut").addEventListener("click",logout);
+  </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

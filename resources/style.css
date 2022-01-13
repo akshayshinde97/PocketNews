@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+body{
+    width: 100% !important;
+}
+
+#nav_text{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 24px;
+    /* identical to box height, or 104% */
+
+    letter-spacing: 2px;
+
+    /* Text/text-gray-dark */
+
+    color: #292B2E;
+}
+nav{
+    width:1321px;
+    margin: 0 59px;
+}
+#cusCon{
+    display: none;
+}
+#rect{
+width: 27px;
+height: 9px;
+left: 1px;
+top: 10px;
+background: linear-gradient(96.34deg, #E537B9 0%, #C040DF 100%);
+border-radius: 4.5px;
+}
+#line{
+/* Line 1 */
+width: 1020px;
+height: 0px;
+left: 0px;
+top: 91px;
+
+/* Gray/gray-200 */
+
+border: 1px solid #E1E4E8;
+
+}
+.card{
+    border: 0px;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+.card-pubd{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+}
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+.card-header{
+    background-color: #ffffff;
+}
+.btn-link{
+    color: #292B2E;
+}
+.btn-link:hover{
+    color: #292B2E;
+}
+.btn.active ~svg ::after{
+    transform: rotate(180deg);
+}
+.carousel-control-next-icon {
+    background-image: url("https://img.icons8.com/material-sharp/96/000000/circled-chevron-right.png");
+}
+.carousel-control-next-icon{
+      /* Use to adjust size of icons */
+      width: 2.5rem;
+      height: 2.5rem;
+}
+/* welcome.html */
+#topicsSelection{
+    font-family: 'Montserrat', sans-serif;
+	width:50%;
+	height: 50vh;
+    margin: 20% auto;
+}
+.selected{
+	border-radius: 20px;
+	border: 1px solid #43e722;
+	background: linear-gradient(91.03deg, #E537B9 7.23%, #C040DF 96.5%);
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+
+}
+button {
+	border-radius: 20px;
+	border: 1px solid  #E537B9;
+	color:  #C040DF;
+    background-color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+} 
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+.btncls{
+    margin: 0.2rem;
+}
+#Sports-accordion{
+    display: none;
+}
+/* *******************************************************LOADER********************************************* */
+.loader9 {
+    display:inline-block;
+      position: relative;
+      margin: 40vh auto;
+      width: 50px;
+      height: 50px;
+    -webkit-animation:loader9 1.5s linear infinite;
+     animation:loader9 1.5s linear infinite;
+  }
+  /* .loader9:before,
+  .loader9:after {
+      position: absolute;
+      content: "";
+      left: 30px;
+      top: 0;
+      width: 30px;
+      height: 50px;
+      background: red;
+      -moz-border-radius: 30px 30px 0 0;
+      border-radius: 30px 30px 0 0;
+      -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      -webkit-transform-origin: 0 100%;
+         -moz-transform-origin: 0 100%;
+          -ms-transform-origin: 0 100%;
+           -o-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+  }
+  .loader9:after {
+      left: 0;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transform-origin: 100% 100%;
+         -moz-transform-origin: 100% 100%;
+          -ms-transform-origin: 100% 100%;
+           -o-transform-origin: 100% 100%;
+              transform-origin :100% 100%;
+  }
+      
+  @keyframes loader9 {
+     0% {transform: scale(0, 0);opacity:0;}
+     100% {transform: scale(1, 1);opacity:1;}
+  }
+  @-webkit-keyframes loader9 {
+     0% {-webkit-transform: scale(0, 0);opacity:0;}
+     100% {-webkit-transform: scale(1, 1);opacity:1;}
+  } */
+  /* .hm-spinner{
+    height: 115px;
+    width: 115px;
+    border: 5px solid transparent;
+    border-top-color: #9C27B0;
+    border-bottom-color: #9C27B0;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: spin 3s linear infinite;
+            animation: spin 3s linear infinite;
+  }
+  
+  .hm-spinner::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    border: 5px solid transparent;
+    border-top-color: #BA68C8;
+    border-bottom-color: #BA68C8;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+   */
+  /* } */
+  .loading {
+    height: 0;
+    width: 0;
+    padding: 15px;
+    border: 6px solid #BA68C8;
+    border-right-color: #FFFFFF;
+    border-radius: 22px;
+    -webkit-animation: rotate 1s infinite linear;
+    /* left, top and position just for the demo! */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  
+  @-webkit-keyframes rotate {
+    /* 100% keyframe for  clockwise. 
+       use 0% instead for anticlockwise */
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+
+#Nouser{
+    display: none;
+    margin: 50% 50%;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    border:1px solid #BA68C8;
+}
+#Sports-accordion{
+    display: none;
+}
+#Covid-accordion{
+    display: none;
+}
+#Tech-accordion{
+    display: none;
+}
+#Food-accordion{
+    display: none;
+} 
+#Business-accordion{
+    display: none;
+}
+#Entertainment-accordion{
+    display: none;
+}
+@media screen and (min-width: 1020px) {
+    body { margin:0 auto; max-width: 1020px; }
+    /* .card-img-top{
+        width: 960px;
+    } */
+
+  }
+
