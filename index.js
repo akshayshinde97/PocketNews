@@ -26,7 +26,8 @@ event.onsubmit = function(e) {myFunction(e)};
 
 function myFunction(e) {
   e.preventDefault();
-  if(~validate_password(e.target.elements.pwd.value))
+  var toggle = validate_password(e.target.elements.pwd.value);
+  if(toggle != true)
   {
     alert("password should be 6 charcters or more!");
     return 
@@ -134,7 +135,8 @@ function validate_email(email) {
 
 function validate_password(password) {
   // Firebase only accepts lengths greater than 6
-  if (password < 6) {
+  console.log(password);
+  if (password.length < 6) {
     return false
   }
   return true;
