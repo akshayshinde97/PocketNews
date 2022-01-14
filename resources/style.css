@@ -39,9 +39,9 @@ width: 1020px;
 height: 0px;
 left: 0px;
 top: 91px;
+margin-bottom: 1rem;
 
 /* Gray/gray-200 */
-
 border: 1px solid #E1E4E8;
 
 }
@@ -89,11 +89,11 @@ border: 1px solid #E1E4E8;
     font-family: 'Montserrat', sans-serif;
 	width:50%;
 	height: 50vh;
-    margin: 20% auto;
+    margin: 15% auto;
 }
 .selected{
 	border-radius: 20px;
-	border: 1px solid #43e722;
+	border: 1px solid #E537B9;
 	background: linear-gradient(91.03deg, #E537B9 7.23%, #C040DF 96.5%);
 	color: #FFFFFF;
 	font-size: 12px;
@@ -139,77 +139,6 @@ button:focus {
     -webkit-animation:loader9 1.5s linear infinite;
      animation:loader9 1.5s linear infinite;
   }
-  /* .loader9:before,
-  .loader9:after {
-      position: absolute;
-      content: "";
-      left: 30px;
-      top: 0;
-      width: 30px;
-      height: 50px;
-      background: red;
-      -moz-border-radius: 30px 30px 0 0;
-      border-radius: 30px 30px 0 0;
-      -webkit-transform: rotate(-45deg);
-         -moz-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-           -o-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      -webkit-transform-origin: 0 100%;
-         -moz-transform-origin: 0 100%;
-          -ms-transform-origin: 0 100%;
-           -o-transform-origin: 0 100%;
-              transform-origin: 0 100%;
-  }
-  .loader9:after {
-      left: 0;
-      -webkit-transform: rotate(45deg);
-         -moz-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-           -o-transform: rotate(45deg);
-              transform: rotate(45deg);
-      -webkit-transform-origin: 100% 100%;
-         -moz-transform-origin: 100% 100%;
-          -ms-transform-origin: 100% 100%;
-           -o-transform-origin: 100% 100%;
-              transform-origin :100% 100%;
-  }
-      
-  @keyframes loader9 {
-     0% {transform: scale(0, 0);opacity:0;}
-     100% {transform: scale(1, 1);opacity:1;}
-  }
-  @-webkit-keyframes loader9 {
-     0% {-webkit-transform: scale(0, 0);opacity:0;}
-     100% {-webkit-transform: scale(1, 1);opacity:1;}
-  } */
-  /* .hm-spinner{
-    height: 115px;
-    width: 115px;
-    border: 5px solid transparent;
-    border-top-color: #9C27B0;
-    border-bottom-color: #9C27B0;
-    border-radius: 50%;
-    position: relative;
-    -webkit-animation: spin 3s linear infinite;
-            animation: spin 3s linear infinite;
-  }
-  
-  .hm-spinner::before{
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
-    border: 5px solid transparent;
-    border-top-color: #BA68C8;
-    border-bottom-color: #BA68C8;
-    border-radius: 50%;
-    -webkit-animation: spin 1.5s linear infinite;
-    animation: spin 1.5s linear infinite;
-   */
-  /* } */
   .loading {
     height: 0;
     width: 0;
@@ -235,10 +164,13 @@ button:focus {
 
 #Nouser{
     display: none;
-    margin: 50% 50%;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
     border-radius: 20px;
     border:1px solid #BA68C8;
+}
+#Nouser a{
+    color: #BA68C8;
 }
 #Sports-accordion{
     display: none;
@@ -258,6 +190,22 @@ button:focus {
 #Entertainment-accordion{
     display: none;
 }
+#content{
+    display: flex;
+    flex-direction: column;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: flex-end;
+}
+#addusername{
+    color: #BA68C8;
+}
+#nxtbtn{
+    margin: 1rem;
+}
 @media screen and (min-width: 1020px) {
     body { margin:0 auto; max-width: 1020px; }
     /* .card-img-top{
@@ -265,4 +213,3 @@ button:focus {
     } */
 
   }
-

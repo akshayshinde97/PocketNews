@@ -21,10 +21,9 @@ const auth = getAuth(app);
 const db = getDatabase(app);
 
 
-var event = document.getElementById("signupform");
-event.onsubmit = function(e) {myFunction(e)};
-
-function myFunction(e) {
+var Signupevent = document.getElementById("signupform");
+Signupevent.onsubmit = function(e) {sgnUp(e)};
+function sgnUp(e) {
   e.preventDefault();
   var toggle = validate_password(e.target.elements.pwd.value);
   if(toggle != true)
@@ -34,17 +33,14 @@ function myFunction(e) {
   }
   createUserWithEmailAndPassword(auth,e.target.elements.email.value,e.target.elements.pwd.value)
   .then(function() {
-    // Declare user variable
     var user = auth.currentUser
-    // Add this user to Firebase Database
-    // Create User data
+
     var userId  = user.uid
     set(ref(db, 'users/'+ userId),{
       username: e.target.elements.Name.value,
       email: e.target.elements.email.value
     })
     .then(()=>{
-      alert("data stored");
       window.location ="login.html";
     })
     .catch((error) => {
@@ -54,7 +50,7 @@ function myFunction(e) {
       console.log(errorMessage);
       alert("data strorage failed.");
     });
-    alert("User Created Successfully");  
+    alert("User Created Successfully,Please login!");  
     })
     .catch(function(error) {
       // Firebase will use this to alert of its errors
@@ -64,12 +60,9 @@ function myFunction(e) {
     })
 }
 
-// TODO  SignIn
-// TODO Forget
-// TODO  Signout 
+ 
 var SgNINevent = document.getElementById("btnsignIn");
 SgNINevent.addEventListener("click", siginfun ); 
-
 
 function siginfun(e){
   e.preventDefault();
@@ -80,8 +73,8 @@ function siginfun(e){
       // Signed in 
       const user = userCredential.user;
       // ...
-      console.log("this is user:-",user)
-      console.log("this",user.username);
+      // console.log("this is user:-",user)
+      // console.log("this",user.username);
       var uid = user.uid;
       const usernameref = ref(db, 'users/' + uid );
       onValue(usernameref, (snapshot) => {
@@ -94,35 +87,15 @@ function siginfun(e){
           window.location ='./welcome.html';
         }
       });
-      
-      // document.getElementById("hello").textContent = user.username;
-
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
-      console.log(errorCode);
-      console.error("fancy me",error);
-      alert( errorCode,":",errorMessage)
-      console.log("ghari jaa bro <3",errorMessage);
+      // console.log(errorCode);
+      // console.error("fancy me",error);
+      alert( errorCode,errorMessage)
     });
-
 }
- // Move on with Auth
-//  createUserWithEmailAndPassword(auth,email, password)
-
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
-
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-});
-
 // Validate Functions
 function validate_email(email) {
   let expression = /^[^@]+@\w+(\.\w+)+\w$/
@@ -151,5 +124,13 @@ function validate_field(field) {
   }
   return true;
 }
+function ShwPSD() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
 // exporting variables and function
-export { auth , signOut };
+export { auth , signOut, ShwPSD };

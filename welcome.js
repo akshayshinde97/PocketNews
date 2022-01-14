@@ -11,7 +11,6 @@ var catgArr=[];
 function add(e)
 {
     e.preventDefault();
-
     var cat = e.target.id;
     if(document.getElementById(cat).classList.toggle("selected"))
     {
@@ -44,17 +43,14 @@ function userChoices()
                 onValue(usernameref, (snapshot) => {
                 const data = snapshot.val();
                     console.log(data.Choices);
-                    // document.getElementById("hello").textContent = data.username;
                     document.getElementById("show").textContent += data.Choices;
-                    // updateStarCount(postElement, data);
                 });
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                console.log(errorCode);
-                console.log(errorMessage);
                 alert("data strorage failed.");  
+                alert(errorMessage);
             });
         }
     });
@@ -64,7 +60,6 @@ function validateChoices()
 {
     if(catgArr.length == 0)
     {
-        console.log("data nahi aya");
         alert("Please atleast select 1 topic");
     }
     else
@@ -72,9 +67,6 @@ function validateChoices()
         userChoices();
     }
 }
-
-
-
 
 export { validateChoices, add, logout, };
 

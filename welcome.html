@@ -14,25 +14,27 @@
         <a class="navbar-brand" href="#">
           <div id="rect"></div>
           <h4 id=nav_text>Pocket News</h4>
-          <button  id="signOut" >SignOut</button>
+          <button  id="signOut">SignOut</button>
         </a>
-    </nav>
-    <div id="topicsSelection" >
-        <h2>Hello,</h2>
-        <h3 id="addusername"></h3>
-        <h4>Select Topics which Fascinates you.</h3>
-        <button class="btncls cat" id="tech" >Technology</button>
-        <button class="btncls cat" id="sports" >Sports</button>
-        <button class="btncls cat" id="covid" >Covid</button>
-        <button class="btncls cat" id="food" >Food</button>
-        <button class="btncls cat" id="business" >Business</button>
-        <button class="btncls cat" id="entertainment" >Entertainment</button>
-        <p id="show">Your Selections Are:-</p>
+      </nav>
+    <div id="content">
+        <div id="topicsSelection" >
+            <h2>Hello,</h2>
+            <h3 id="addusername"></h3>
+            <h4>Select Topics which Fascinates you.</h3>
+            <button class="btncls cat" id="tech" >Technology</button>
+            <button class="btncls cat" id="sports" >Sports</button>
+            <button class="btncls cat" id="covid" >Covid</button>
+            <button class="btncls cat" id="food" >Food</button>
+            <button class="btncls cat" id="business" >Business</button>
+            <button class="btncls cat" id="entertainment" >Entertainment</button>
+        </div>
+        <div id="nxtbtn">
+            <button class="btncls" id="fselect" > NExt</button>
+        </div>
     </div>
-    <div>
-       
-        <button class="btncls" id="fselect" > NExt</button>
-    </div>
+    
+    
 <script type="module"  src="welcome.js"></script>
 <script type="module">
     import {add, validateChoices, logout } from "./welcome.js";
@@ -42,9 +44,6 @@
     link.addEventListener("click",add) 
     });
     document.getElementById("signOut").addEventListener("click", logout);
-    // validateChoices();
-    // add();
-    // logout();
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
