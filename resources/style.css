@@ -84,6 +84,15 @@ border: 1px solid #E1E4E8;
       width: 2.5rem;
       height: 2.5rem;
 }
+.carousel-control-prev-icon {
+    background-image: url("https://img.icons8.com/material-sharp/96/000000/circled-chevron-left.png");
+}
+.carousel-control-prev-icon{
+      /* Use to adjust size of icons */
+      width: 2.5rem;
+      height: 2.5rem;
+}
+
 /* welcome.html */
 #topicsSelection{
     font-family: 'Montserrat', sans-serif;
