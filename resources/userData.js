@@ -18,6 +18,7 @@ const firebaseConfig = {
       if (user) {
         document.getElementById("loader").style.display="none";
         document.getElementById("cusCon").style.display="block";
+        document.getElementById("signOut").style.display ="block";
           var db = getDatabase();
           var uid = user.uid;
           const usernameref = ref(db, 'users/' + uid );
@@ -32,7 +33,6 @@ const firebaseConfig = {
       {
             document.getElementById("Nouser").style.display ="block";
             document.getElementById("loader").style.display="none";
-            document.getElementById("signOut").style.display ="none";
       }
       else{
           document.getElementById("loader").style.display="block";

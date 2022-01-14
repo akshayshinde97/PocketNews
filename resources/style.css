@@ -205,6 +205,9 @@ button:focus {
 #nxtbtn{
     margin: 1rem;
 }
+#signOut{
+    display: none;
+}
 @media screen and (min-width: 1020px) {
     body { margin:0 auto; max-width: 1020px; }
     /* .card-img-top{
@@ -213,7 +216,8 @@ button:focus {
 
   }
   @media screen and (max-width: 720px) {
-    body { margin:0 auto; max-width: 720px; max-height: 1080px; }
+    body { margin:0; max-width: 720px; max-height: 100%;     margin: 0;
+}
     /* .card-img-top{
         width: 960px;
     } */
