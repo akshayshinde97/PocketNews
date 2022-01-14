@@ -37,7 +37,6 @@ function userChoices()
                 Choices : catgArr
             })
             .then(()=>{
-                alert("data stored");
                 window.location ="index.html";
                 const usernameref = ref(db, 'users/' + uid );
                 onValue(usernameref, (snapshot) => {

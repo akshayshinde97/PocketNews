@@ -88,7 +88,6 @@ border: 1px solid #E1E4E8;
 #topicsSelection{
     font-family: 'Montserrat', sans-serif;
 	width:50%;
-	height: 50vh;
     margin: 15% auto;
 }
 .selected{
@@ -208,6 +207,13 @@ button:focus {
 }
 @media screen and (min-width: 1020px) {
     body { margin:0 auto; max-width: 1020px; }
+    /* .card-img-top{
+        width: 960px;
+    } */
+
+  }
+  @media screen and (max-width: 720px) {
+    body { margin:0 auto; max-width: 720px; max-height: 1080px; }
     /* .card-img-top{
         width: 960px;
     } */
