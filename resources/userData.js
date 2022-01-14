@@ -32,9 +32,11 @@ const firebaseConfig = {
       {
             document.getElementById("Nouser").style.display ="block";
             document.getElementById("loader").style.display="none";
+            document.getElementById("signOut").style.display ="none";
       }
       else{
           document.getElementById("loader").style.display="block";
+          document.getElementById("signOut").style.display ="block";
       }
   
   });
